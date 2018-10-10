@@ -1,0 +1,12 @@
+target 'DNPresentDemo' do
+pod 'SDCycleScrollView'
+pod 'NinaPagerView'
+pod 'MBProgressHUD'
+pod 'AFNetworking'
+pod 'ReactiveObjC'
+pod 'MJExtension'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'Masonry'
+pod 'Toast'
+end

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  DNPresentDemo
+
+  Created by zjs on 2018/10/10.
+  Copyright © 2018 zjs. All rights reserved.
+*/
+"find_tab" = "发现";
+"video_tab" = "视频";
+"mine_tab" = "我的";
+"friend_tab" = "朋友";
+"account_tab" = "账号";
