@@ -1,1 +1,3 @@
-# DNPresentDemo
+# DNPresentDemo   
+#### 平时个人随笔记录，乱七八糟：    
+###### 包含一些分类，工具类等。
