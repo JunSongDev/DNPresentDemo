@@ -20,6 +20,7 @@
 #import <NinaPagerView.h>
 #import <SDCycleScrollView.h>
 #import <SDWebImage/UIImage+GIF.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 // Foundation Category
 #import "NSArray+Extension.h"

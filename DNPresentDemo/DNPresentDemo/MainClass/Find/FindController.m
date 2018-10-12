@@ -15,7 +15,6 @@
 #import "DNAutoHeightTextView.h"
 #import "SelwynExpandableTextView.h"
 #import "DNTextScrollView.h"
-#import "DNSwitch.h"
 #import "TestModel.h"
 
 
@@ -131,6 +130,7 @@
 - (void)buttonClick {
     
     DNWebViewController * webController = [[DNWebViewController alloc] init];
+    webController.progressColor = UIColor.greenColor;
     webController.urlString = @"http://www.baidu.com";
     [self.navigationController pushViewController:webController animated:YES];
     

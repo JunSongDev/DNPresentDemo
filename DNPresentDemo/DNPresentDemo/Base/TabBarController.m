@@ -16,7 +16,7 @@
 
 #import "DNBaseTabBar.h"
 
-@interface TabBarController ()
+@interface TabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -36,11 +36,65 @@
     self.tabBar.barTintColor = [UIColor colorWithWhite:0.0 alpha:0.3];
     // 设置TabBar字体颜色
     self.tabBar.tintColor = [UIColor whiteColor];
+    
+    self.tabBarController.delegate = self;
 }
 #pragma mark -- didReceiveMemoryWarning
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
+}
+
+- (void)animationWithIndex:(NSInteger) index {
+    NSMutableArray * tabbarbuttonArray = [NSMutableArray array];
+    
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            
+            [tabbarbuttonArray addObject:tabBarButton];
+        }
+    }
+    
+    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    
+    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    pulse.duration = 0.08;
+    
+    pulse.repeatCount= 1;
+    
+    pulse.autoreverses= YES;
+    
+    pulse.fromValue= [NSNumber numberWithFloat:0.7];
+    
+    pulse.toValue= [NSNumber numberWithFloat:1.3];
+    
+    [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
+}
+
+- (void)tabBarAnimationWithItem:(UITabBarItem *)item {
+    
+    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    
+    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    pulse.duration = 0.08;
+    
+    pulse.repeatCount= 1;
+    
+    pulse.autoreverses= YES;
+    
+    pulse.fromValue= [NSNumber numberWithFloat:0.7];
+    
+    pulse.toValue= [NSNumber numberWithFloat:1.3];
+    
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarItem")]) {
+            [tabBarButton.layer addAnimation:pulse forKey:nil];
+        }
+    }
 }
 
 #pragma mark -- setControlForSuper
@@ -87,6 +141,11 @@
 #pragma mark -- UITableView Delegate && DataSource
 
 #pragma mark -- other Deleget
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+
+    [self animationWithIndex:[self.tabBar.items indexOfObject:item]];
+}
 
 //- (void)dnPlusButtonSelected:(UIButton *)sender {
 //

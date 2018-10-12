@@ -265,13 +265,17 @@
 
 #pragma mark -- Setter && Getter
 
+- (void)setProgressColor:(UIColor *)progressColor {
+    _progressColor = progressColor;
+}
+
 - (UIProgressView *)webProgress {
     
     if (!_webProgress) {
         
         _webProgress = [[UIProgressView alloc] init];
         // 设置进度条的背景颜色
-        _webProgress.backgroundColor = UIColor.blueColor;
+        _webProgress.progressTintColor = self.progressColor ? :UIColor.orangeColor;
         _webProgress.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
     }
     return _webProgress;

@@ -11,7 +11,7 @@
 @interface VedioTableViewCell ()
 @property (weak, nonatomic) IBOutlet UILabel *title_label;
 @property (weak, nonatomic) IBOutlet UILabel *public_time;
-@property (weak, nonatomic) IBOutlet UILabel *urlString;
+@property (weak, nonatomic) IBOutlet UIImageView *url_imageView;
 
 @end
 
@@ -32,6 +32,6 @@
     _model = model;
     self.title_label.text = model.title;
     self.public_time.text = model.publishTime;
-    self.urlString.text   = model.path;
+    [self.url_imageView sd_setImageWithURL:[NSURL URLWithString:model.path]];
 }
 @end

@@ -92,9 +92,9 @@
      *  @param  UITableViewCellAccessoryDetailDisclosureButton  按钮 + 箭头
      */
     // 仅可点击的警告按钮
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    //cell.accessoryType = UITableViewCellAccessoryCheckmark;
     // 可改变 accessory 的颜色
-    cell.tintColor = UIColor.orangeColor;
+    //cell.tintColor = UIColor.orangeColor;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.model = model;
     return cell;

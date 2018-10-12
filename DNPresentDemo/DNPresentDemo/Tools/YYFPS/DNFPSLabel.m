@@ -18,8 +18,6 @@
     NSTimeInterval _lastTime;
     UIFont *_font;
     UIFont *_subFont;
-    
-    NSTimeInterval _llll;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {

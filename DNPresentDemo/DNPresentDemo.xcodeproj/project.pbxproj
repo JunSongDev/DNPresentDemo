@@ -52,7 +52,6 @@
 		7094D9BF216DC753003E49C2 /* DNAdvertiseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D956216DC753003E49C2 /* DNAdvertiseTool.m */; };
 		7094D9C0216DC753003E49C2 /* DNAdvertiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D957216DC753003E49C2 /* DNAdvertiseView.m */; };
 		7094D9C1216DC753003E49C2 /* SelwynExpandableTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D95A216DC753003E49C2 /* SelwynExpandableTextView.m */; };
-		7094D9C2216DC753003E49C2 /* DNSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D95B216DC753003E49C2 /* DNSwitch.m */; };
 		7094D9C3216DC753003E49C2 /* DNTextFieild.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D95C216DC753003E49C2 /* DNTextFieild.m */; };
 		7094D9C4216DC753003E49C2 /* DNFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D95D216DC753003E49C2 /* DNFileTools.m */; };
 		7094D9C5216DC753003E49C2 /* DNGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D960216DC753003E49C2 /* DNGuideTool.m */; };
@@ -189,7 +188,6 @@
 		7094D958216DC753003E49C2 /* DNAdvertiseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAdvertiseTool.h; sourceTree = "<group>"; };
 		7094D959216DC753003E49C2 /* DNSheetAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSheetAlert.h; sourceTree = "<group>"; };
 		7094D95A216DC753003E49C2 /* SelwynExpandableTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelwynExpandableTextView.m; sourceTree = "<group>"; };
-		7094D95B216DC753003E49C2 /* DNSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSwitch.m; sourceTree = "<group>"; };
 		7094D95C216DC753003E49C2 /* DNTextFieild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTextFieild.m; sourceTree = "<group>"; };
 		7094D95D216DC753003E49C2 /* DNFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNFileTools.m; sourceTree = "<group>"; };
 		7094D95F216DC753003E49C2 /* DNGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNGuideView.h; sourceTree = "<group>"; };
@@ -218,9 +216,7 @@
 		7094D979216DC753003E49C2 /* LMJScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJScrollTextView.h; sourceTree = "<group>"; };
 		7094D97A216DC753003E49C2 /* DNTextScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTextScrollView.h; sourceTree = "<group>"; };
 		7094D97B216DC753003E49C2 /* DNFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNFileTools.h; sourceTree = "<group>"; };
-		7094D97C216DC753003E49C2 /* DNTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTools.h; sourceTree = "<group>"; };
 		7094D97D216DC753003E49C2 /* DNTextFieild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTextFieild.h; sourceTree = "<group>"; };
-		7094D97E216DC753003E49C2 /* DNSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSwitch.h; sourceTree = "<group>"; };
 		7094D97F216DC753003E49C2 /* SelwynExpandableTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelwynExpandableTextView.h; sourceTree = "<group>"; };
 		7094D980216DC753003E49C2 /* DNSheetAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSheetAlert.m; sourceTree = "<group>"; };
 		7094D982216DC753003E49C2 /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
@@ -346,9 +342,9 @@
 			isa = PBXGroup;
 			children = (
 				7094D8EE216DC752003E49C2 /* NSBaseNetManager.h */,
-				7094D8EF216DC752003E49C2 /* DNBaseNetWork.m */,
 				7094D8F0216DC752003E49C2 /* NSBaseNetManager.m */,
 				7094D8F1216DC752003E49C2 /* DNBaseNetWork.h */,
+				7094D8EF216DC752003E49C2 /* DNBaseNetWork.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -356,20 +352,20 @@
 		7094D8F2216DC752003E49C2 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				7094D8F3216DC752003E49C2 /* DNWebViewController.m */,
-				7094D8F4216DC752003E49C2 /* BaseController.m */,
+				7094D8F9216DC752003E49C2 /* DNConstant.h */,
+				7094D900216DC752003E49C2 /* DNConstant.m */,
+				7094D8FA216DC752003E49C2 /* TabBarController.h */,
 				7094D8F5216DC752003E49C2 /* TabBarController.m */,
 				7094D8F6216DC752003E49C2 /* DNBaseTabBar.h */,
-				7094D8F7216DC752003E49C2 /* BaseView.m */,
-				7094D8F8216DC752003E49C2 /* NavigationController.h */,
-				7094D8F9216DC752003E49C2 /* DNConstant.h */,
-				7094D8FA216DC752003E49C2 /* TabBarController.h */,
-				7094D8FB216DC752003E49C2 /* BaseController.h */,
-				7094D8FC216DC752003E49C2 /* DNWebViewController.h */,
-				7094D8FD216DC752003E49C2 /* NavigationController.m */,
-				7094D8FE216DC752003E49C2 /* BaseView.h */,
 				7094D8FF216DC752003E49C2 /* DNBaseTabBar.m */,
-				7094D900216DC752003E49C2 /* DNConstant.m */,
+				7094D8FE216DC752003E49C2 /* BaseView.h */,
+				7094D8F7216DC752003E49C2 /* BaseView.m */,
+				7094D8FB216DC752003E49C2 /* BaseController.h */,
+				7094D8F4216DC752003E49C2 /* BaseController.m */,
+				7094D8F8216DC752003E49C2 /* NavigationController.h */,
+				7094D8FD216DC752003E49C2 /* NavigationController.m */,
+				7094D8FC216DC752003E49C2 /* DNWebViewController.h */,
+				7094D8F3216DC752003E49C2 /* DNWebViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -390,8 +386,8 @@
 			isa = PBXGroup;
 			children = (
 				7094D903216DC752003E49C2 /* VedioController.h */,
-				7094D904216DC752003E49C2 /* Controller */,
 				7094D905216DC752003E49C2 /* VedioController.m */,
+				7094D904216DC752003E49C2 /* Controller */,
 				7094D906216DC752003E49C2 /* Model */,
 				7094D90B216DC752003E49C2 /* View */,
 			);
@@ -408,9 +404,9 @@
 		7094D906216DC752003E49C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7094D907216DC752003E49C2 /* VedioModel.h */,
-				7094D908216DC752003E49C2 /* VedioViewModel.m */,
 				7094D909216DC752003E49C2 /* VedioViewModel.h */,
+				7094D908216DC752003E49C2 /* VedioViewModel.m */,
+				7094D907216DC752003E49C2 /* VedioModel.h */,
 				7094D90A216DC752003E49C2 /* VedioModel.m */,
 			);
 			path = Model;
@@ -419,9 +415,9 @@
 		7094D90B216DC752003E49C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7094D90E216DC752003E49C2 /* VedioTableViewCell.h */,
 				7094D90C216DC752003E49C2 /* VedioTableViewCell.m */,
 				7094D90D216DC752003E49C2 /* VedioTableViewCell.xib */,
-				7094D90E216DC752003E49C2 /* VedioTableViewCell.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,9 +425,9 @@
 		7094D90F216DC752003E49C2 /* Friend */ = {
 			isa = PBXGroup;
 			children = (
+				7094D914216DC752003E49C2 /* FriendController.h */,
 				7094D910216DC752003E49C2 /* FriendController.m */,
 				7094D911216DC752003E49C2 /* Controller */,
-				7094D914216DC752003E49C2 /* FriendController.h */,
 				7094D915216DC752003E49C2 /* Model */,
 				7094D91A216DC752003E49C2 /* View */,
 			);
@@ -451,8 +447,8 @@
 			isa = PBXGroup;
 			children = (
 				7094D916216DC752003E49C2 /* FriendViewModel.h */,
-				7094D917216DC752003E49C2 /* FriendPageViewModel.m */,
 				7094D918216DC752003E49C2 /* FriendViewModel.m */,
+				7094D917216DC752003E49C2 /* FriendPageViewModel.m */,
 				7094D919216DC752003E49C2 /* FriendPageViewModel.h */,
 			);
 			path = Model;
@@ -470,11 +466,11 @@
 		7094D91D216DC752003E49C2 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				7094D926216DC752003E49C2 /* MineController.h */,
 				7094D91E216DC752003E49C2 /* MineController.m */,
 				7094D91F216DC752003E49C2 /* Controller */,
 				7094D922216DC752003E49C2 /* Model */,
 				7094D923216DC752003E49C2 /* View */,
-				7094D926216DC752003E49C2 /* MineController.h */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -508,10 +504,10 @@
 			isa = PBXGroup;
 			children = (
 				7094D928216DC752003E49C2 /* FindController.h */,
+				7094D92E216DC752003E49C2 /* FindController.m */,
 				7094D929216DC752003E49C2 /* Controller */,
 				7094D92A216DC752003E49C2 /* Model */,
 				7094D92D216DC752003E49C2 /* View */,
-				7094D92E216DC752003E49C2 /* FindController.m */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -590,12 +586,12 @@
 			isa = PBXGroup;
 			children = (
 				7094D944216DC753003E49C2 /* Assets.xcassets */,
+				7094D94C216DC753003E49C2 /* ViewController.h */,
 				7094D945216DC753003E49C2 /* ViewController.m */,
 				7094D946216DC753003E49C2 /* LaunchScreen.storyboard */,
 				7094D948216DC753003E49C2 /* Main.storyboard */,
 				7094D94A216DC753003E49C2 /* main.m */,
 				7094D94B216DC753003E49C2 /* Info.plist */,
-				7094D94C216DC753003E49C2 /* ViewController.h */,
 				7094D9DC216DC7D0003E49C2 /* PresentDemo.pch */,
 				7094D9DD216DC855003E49C2 /* DNLayoutMargin.h */,
 				7094D9DE216DC911003E49C2 /* DNImportHeader.h */,
@@ -616,29 +612,18 @@
 		7094D950216DC753003E49C2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				7094D951216DC753003E49C2 /* DNAutoHeightTextView.m */,
-				7094D952216DC753003E49C2 /* DNUserConfig.m */,
-				7094D953216DC753003E49C2 /* BMChineseSort.h */,
-				7094D954216DC753003E49C2 /* DNAdvertise */,
 				7094D959216DC753003E49C2 /* DNSheetAlert.h */,
-				7094D95A216DC753003E49C2 /* SelwynExpandableTextView.m */,
-				7094D95B216DC753003E49C2 /* DNSwitch.m */,
-				7094D95C216DC753003E49C2 /* DNTextFieild.m */,
-				7094D95D216DC753003E49C2 /* DNFileTools.m */,
+				7094D980216DC753003E49C2 /* DNSheetAlert.m */,
+				7094D953216DC753003E49C2 /* BMChineseSort.h */,
+				7094D96D216DC753003E49C2 /* BMChineseSort.m */,
+				7094D981216DC753003E49C2 /* UIKit (Category) */,
+				7094D954216DC753003E49C2 /* DNAdvertise */,
+				7094D9E8216DD8B5003E49C2 /* DNTextTool */,
+				7094D9E7216DD855003E49C2 /* Preference */,
 				7094D95E216DC753003E49C2 /* DNGuidePage */,
 				7094D963216DC753003E49C2 /* Fundation (Category) */,
-				7094D96C216DC753003E49C2 /* DNAutoHeightTextView.h */,
-				7094D96D216DC753003E49C2 /* BMChineseSort.m */,
-				7094D96E216DC753003E49C2 /* DNUserConfig.h */,
 				7094D96F216DC753003E49C2 /* YYFPS */,
 				7094D976216DC753003E49C2 /* TextScrollView */,
-				7094D97B216DC753003E49C2 /* DNFileTools.h */,
-				7094D97C216DC753003E49C2 /* DNTools.h */,
-				7094D97D216DC753003E49C2 /* DNTextFieild.h */,
-				7094D97E216DC753003E49C2 /* DNSwitch.h */,
-				7094D97F216DC753003E49C2 /* SelwynExpandableTextView.h */,
-				7094D980216DC753003E49C2 /* DNSheetAlert.m */,
-				7094D981216DC753003E49C2 /* UIKit (Category) */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -683,12 +668,12 @@
 		7094D96F216DC753003E49C2 /* YYFPS */ = {
 			isa = PBXGroup;
 			children = (
-				7094D970216DC753003E49C2 /* YYWeakProxy.m */,
-				7094D971216DC753003E49C2 /* YYFPSLabel.h */,
 				7094D972216DC753003E49C2 /* DNFPSLabel.h */,
+				7094D975216DC753003E49C2 /* DNFPSLabel.m */,
+				7094D971216DC753003E49C2 /* YYFPSLabel.h */,
 				7094D973216DC753003E49C2 /* YYFPSLabel.m */,
 				7094D974216DC753003E49C2 /* YYWeakProxy.h */,
-				7094D975216DC753003E49C2 /* DNFPSLabel.m */,
+				7094D970216DC753003E49C2 /* YYWeakProxy.m */,
 			);
 			path = YYFPS;
 			sourceTree = "<group>";
@@ -729,6 +714,30 @@
 				7094D995216DC753003E49C2 /* WKWebView+Extension.h */,
 			);
 			path = "UIKit (Category)";
+			sourceTree = "<group>";
+		};
+		7094D9E7216DD855003E49C2 /* Preference */ = {
+			isa = PBXGroup;
+			children = (
+				7094D97B216DC753003E49C2 /* DNFileTools.h */,
+				7094D95D216DC753003E49C2 /* DNFileTools.m */,
+				7094D96E216DC753003E49C2 /* DNUserConfig.h */,
+				7094D952216DC753003E49C2 /* DNUserConfig.m */,
+			);
+			path = Preference;
+			sourceTree = "<group>";
+		};
+		7094D9E8216DD8B5003E49C2 /* DNTextTool */ = {
+			isa = PBXGroup;
+			children = (
+				7094D95A216DC753003E49C2 /* SelwynExpandableTextView.m */,
+				7094D97F216DC753003E49C2 /* SelwynExpandableTextView.h */,
+				7094D96C216DC753003E49C2 /* DNAutoHeightTextView.h */,
+				7094D951216DC753003E49C2 /* DNAutoHeightTextView.m */,
+				7094D97D216DC753003E49C2 /* DNTextFieild.h */,
+				7094D95C216DC753003E49C2 /* DNTextFieild.m */,
+			);
+			path = DNTextTool;
 			sourceTree = "<group>";
 		};
 		84C0630D6A15F80B8FB55138 /* Frameworks */ = {
@@ -924,7 +933,6 @@
 				7094D9A6216DC753003E49C2 /* FriendPageViewModel.m in Sources */,
 				7094D9C1216DC753003E49C2 /* SelwynExpandableTextView.m in Sources */,
 				7094D996216DC753003E49C2 /* DNBaseNetWork.m in Sources */,
-				7094D9C2216DC753003E49C2 /* DNSwitch.m in Sources */,
 				7094D9C5216DC753003E49C2 /* DNGuideTool.m in Sources */,
 				7094D9A2216DC753003E49C2 /* VedioTableViewCell.m in Sources */,
 				7094D997216DC753003E49C2 /* NSBaseNetManager.m in Sources */,
@@ -1162,10 +1170,12 @@
 			baseConfigurationReference = 953AB76436DD7D1875859890 /* Pods-DNPresentDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DNPresentDemo/Resource/PresentDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DNPresentDemo/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1181,10 +1191,12 @@
 			baseConfigurationReference = 6EA190FDB3FD6095FB27376E /* Pods-DNPresentDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DNPresentDemo/Resource/PresentDemo.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/DNPresentDemo/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
