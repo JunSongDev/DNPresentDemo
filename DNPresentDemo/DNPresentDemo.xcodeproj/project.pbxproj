@@ -78,6 +78,7 @@
 		7094D9DA216DC753003E49C2 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D993216DC753003E49C2 /* UIButton+Extension.m */; };
 		7094D9DB216DC753003E49C2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7094D994216DC753003E49C2 /* UIView+Extension.m */; };
 		7094D9E3216DCACC003E49C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7094D9E5216DCACC003E49C2 /* Localizable.strings */; };
+		70C5648621748BDC00F7D2C7 /* DNPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C5648521748BDC00F7D2C7 /* DNPageControl.m */; };
 		C53F2A9BDC5049E786A9B98E /* libPods-DNPresentDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F23E0DD868DABDD394A146 /* libPods-DNPresentDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -246,6 +247,8 @@
 		7094D9E0216DCA96003E49C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		7094D9E4216DCACC003E49C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7094D9E6216DCACE003E49C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		70C5648421748BDC00F7D2C7 /* DNPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNPageControl.h; sourceTree = "<group>"; };
+		70C5648521748BDC00F7D2C7 /* DNPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNPageControl.m; sourceTree = "<group>"; };
 		953AB76436DD7D1875859890 /* Pods-DNPresentDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNPresentDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNPresentDemo/Pods-DNPresentDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A8F23E0DD868DABDD394A146 /* libPods-DNPresentDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNPresentDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -531,6 +534,8 @@
 		7094D92D216DC752003E49C2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				70C5648421748BDC00F7D2C7 /* DNPageControl.h */,
+				70C5648521748BDC00F7D2C7 /* DNPageControl.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -932,6 +937,7 @@
 				7094D9B1216DC753003E49C2 /* EditorInfoController.m in Sources */,
 				7094D9A6216DC753003E49C2 /* FriendPageViewModel.m in Sources */,
 				7094D9C1216DC753003E49C2 /* SelwynExpandableTextView.m in Sources */,
+				70C5648621748BDC00F7D2C7 /* DNPageControl.m in Sources */,
 				7094D996216DC753003E49C2 /* DNBaseNetWork.m in Sources */,
 				7094D9C5216DC753003E49C2 /* DNGuideTool.m in Sources */,
 				7094D9A2216DC753003E49C2 /* VedioTableViewCell.m in Sources */,

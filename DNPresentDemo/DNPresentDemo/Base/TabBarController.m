@@ -73,29 +73,29 @@
     [[tabbarbuttonArray[index] layer] addAnimation:pulse forKey:nil];
 }
 
-- (void)tabBarAnimationWithItem:(UITabBarItem *)item {
-    
-    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    
-    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    
-    pulse.duration = 0.08;
-    
-    pulse.repeatCount= 1;
-    
-    pulse.autoreverses= YES;
-    
-    pulse.fromValue= [NSNumber numberWithFloat:0.7];
-    
-    pulse.toValue= [NSNumber numberWithFloat:1.3];
-    
-    for (UIView *tabBarButton in self.tabBar.subviews) {
-        
-        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarItem")]) {
-            [tabBarButton.layer addAnimation:pulse forKey:nil];
-        }
-    }
-}
+//- (void)tabBarAnimationWithItem:(UITabBarItem *)item {
+//
+//    CABasicAnimation*pulse = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+//
+//    pulse.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//
+//    pulse.duration = 0.08;
+//
+//    pulse.repeatCount= 1;
+//
+//    pulse.autoreverses= YES;
+//
+//    pulse.fromValue= [NSNumber numberWithFloat:0.7];
+//
+//    pulse.toValue= [NSNumber numberWithFloat:1.3];
+//
+//    for (UIView *tabBarButton in self.tabBar.subviews) {
+//
+//        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarItem")]) {
+//            [tabBarButton.layer addAnimation:pulse forKey:nil];
+//        }
+//    }
+//}
 
 #pragma mark -- setControlForSuper
 - (void)setControlForSuper{

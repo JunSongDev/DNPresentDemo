@@ -16,10 +16,11 @@
 #import "SelwynExpandableTextView.h"
 #import "DNTextScrollView.h"
 #import "TestModel.h"
-
+#import "DNPageControl.h"
 
 @interface FindController ()<DNSheetAlertDelegate, SDCycleScrollViewDelegate, DNTextScrollViewDelegate>
 
+@property (nonatomic, strong) DNPageControl * page;
 @end
 
 @implementation FindController
@@ -118,6 +119,19 @@
         make.width.mas_offset(SCREEN_W);
         make.height.mas_offset(50);
     }];
+    
+    self.page = [[DNPageControl alloc] init];
+    self.page.numberOfPages = 3;
+    self.page.currentPageIndicatorTintColor = UIColor.cyanColor;
+    self.page.pageIndicatorTintColor = UIColor.blackColor;
+    [self.view addSubview:self.page];
+    
+    [self.page mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(textView.mas_bottom).mas_offset(SCREEN_W*0.15);
+        make.centerX.mas_equalTo(self.view);
+        make.width.mas_offset(SCREEN_W);
+        make.height.mas_offset(50);
+    }];
 }
 
 #pragma mark -- addConstrainsForSuper
@@ -141,6 +155,9 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     [self.view endEditing:YES];
+    
+    //int index = arc4random_uniform(2);
+    self.page.currentPage = 1;
 }
 
 #pragma mark -- UITableView Delegate && DataSource
